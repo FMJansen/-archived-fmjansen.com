@@ -1,22 +1,16 @@
 $(document).ready(function() {
-
-  $('div#about').addClass('loaded');
-
-  $('form').submit(function(event) {
-    event.preventDefault();
-    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-
-    if($('[name=name]').val().length > 0 && $('[name=email]').val().length > 0 && $('[name=subject]').val().length > 0 && $('textarea').val().length > 0 && emailReg.test($('[name=email]').val())) {
-      $.post('/send.php', { 'name': $('[name=name]').val(), 'mail': $('[name=email]').val(), 'subject': $('[name=subject]').val(), 'message': $('textarea').val() }, function() {
-        $('#notify').text('Your message is sent.').css('color', 'green').fadeIn(400);
-      });
-      $('#slidedown').animate({height: $('#notify').height() + 60 }, 400);
-      $('form').slideUp('fast');
-    } else {
-      $('#notify').text("You haven't filled in everything correctly.").css('color', '#c22').fadeIn(400);
-      $('#slidedown').animate({height: $('#notify').height() + 60 }, 400);
-    }
-  });
+  setTimeout(function() {
+    $('h1').addClass('loaded');
+  }, 100);
+  setTimeout(function() {
+    $('nav').addClass('loaded');
+  }, 300);
+  setTimeout(function() {
+    $('div').addClass('loaded');
+  }, 500);
+  setTimeout(function() {
+    $('footer').addClass('loaded');
+  }, 700);
 
   if(window.devicePixelRatio >= 2) {
     $('img.retina').each(function(i) {
@@ -25,11 +19,73 @@ $(document).ready(function() {
     });
   }
 
+  $('a[href="/portfolio"]').click(function(e) {
+    e.preventDefault();
+    var curUrl = location.href;
+
+    if(curUrl.indexOf('/portfolio/') === -1) {
+      $('div#content').addClass('loading');
+      $.ajax({
+        url: '/portfolio/?ajax=1',
+        dataType: 'html',
+        error: function(e) {
+          $('div#content').removeClass('loading').prepend('<p class="error">Something went wrong, please try again.</p>');
+        }
+      }).done(function(data) {
+        $('body').addClass('portfolio');
+        $('div#content').removeClass('loading');
+        window.history.pushState("object or string", "Portfolio", "/portfolio/");
+        $('div#content').html(data);
+      });
+    }
+  });
+
+
+  $('a[href="/"]').click(function(e) {
+    e.preventDefault();
+    var curUrl = location.href;
+
+    if(curUrl.indexOf('/portfolio/') !== -1) {
+      $('div#content').addClass('loading');
+      $.ajax({
+        url: '/?ajax=1',
+        dataType: 'html',
+        error: function(e) {
+          $('div#content').removeClass('loading').prepend('<p class="error">Something went wrong, please try again.</p>');
+        }
+      }).done(function(data) {
+        $('body').removeClass('portfolio');
+        $('div#content').removeClass('loading');
+        window.history.pushState("object or string", "Home", "/");
+        $('div#content').html(data);
+      });
+    }
+  });
+
+
+  $('body').on('click', '.portfolio a', function(e) {
+    var to = $(this).attr('href');
+
+    if(to === '#top') {
+      e.preventDefault();
+      $('body').animate({
+        scrollTop: 0
+      }, 400);
+    } else if(to.indexOf('#') !== -1) {
+      e.preventDefault();
+      var target = $(to);
+      $('body').animate({
+        scrollTop: target.offset().top - 25
+      }, 400);
+    }
+  });
+
+
   $(window).scroll(function() {
-    if($(window).scrollTop() > 500) {
-      $('#up').fadeIn('fast');
+    if($(window).scrollTop() > 380) {
+      $('#up').stop(true, true).fadeIn('fast');
     } else {
-      $('#up').fadeOut('fast');
+      $('#up').stop(true, true).fadeOut('fast');
     }
   });
 

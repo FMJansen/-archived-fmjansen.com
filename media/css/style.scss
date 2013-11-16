@@ -2,6 +2,14 @@ $maincolor: #E4485B;
 $darkcolor: darken($maincolor, 9%);
 $lightcolor: lighten($maincolor, 4%);
 
+@mixin prefixify($name, $properties...) {
+          #{$name}: $properties;
+       -o-#{$name}: $properties;
+      -ms-#{$name}: $properties;
+     -moz-#{$name}: $properties;
+  -webkit-#{$name}: $properties;
+}
+
 ::selection {
 	background: $maincolor;
 	color: #fff;
@@ -17,24 +25,17 @@ $lightcolor: lighten($maincolor, 4%);
 }
 
 body {
+  margin: 0;
+  color: #333;
+  overflow-y: scroll;
   background: #fafafa;
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #333;
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  margin: 0;
 }
 
-h1 {
-  font-weight: 300;
-  text-align: center;
-  font-size: 2.8em;
-  margin-top: 1.1em;
-  color: $maincolor;
-}
 
+
+/*STANDARD ELEMENTS*/
 a:link, a:visited {
   color: $maincolor;
   text-decoration: none;
@@ -46,133 +47,158 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.75em;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-nav ul li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-nav ul li a:link, nav ul li a:visited {
-  padding: 0.7em 0.8em;
-  text-decoration: none;
-  color: #555;
-}
-
-nav ul li a:hover {
-  color: #222;
-  text-decoration: underline;
-}
-
-nav ul li a#here {
-  text-decoration: none;
-  color: $maincolor;
-}
-
-div#content {
-  margin-bottom: 4em;
-}
-
-h2 {
-  font-weight: 300;
-  text-align: center;
-  font-size: 2.2em;
-  margin: 1.2em 1em 0.6em;
-}
-
-h3 {
-  font-weight: 300;
-  text-align: center;
-  font-size: 1.6em;
-  color: $maincolor;
-  margin: 1.6em 1em 0.3em;
-}
-
-div#content p {
-  text-align: justify;
-  margin: 1em 5%;
-  line-height: 1.6em;
-}
-
-ul#portfolio {
-  margin: 1em 5%;
-  padding-left: 1.2em;
-}
-
-div#me {
-  width: 220px;
-  height: 220px;
-          border-radius: 110px;
-  -webkit-border-radius: 110px;
-  margin: 2em auto 0;
-  overflow: hidden;
-}
-
-div#me img {
-  max-width: 100%;
-          border-radius: 110px;
-  -webkit-border-radius: 110px;
-          filter: grayscale(100%);
-       -o-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-     -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-          transition: all 200ms ease;
-       -o-transition: all 200ms ease;
-      -ms-transition: all 200ms ease;
-     -moz-transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-}
-div#me:hover img {
-          filter: grayscale(0%);
-       -o-filter: grayscale(0%);
-      -ms-filter: grayscale(0%);
-     -moz-filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-}
-
-a.button:link, a.button:visited, button {
+.button {
   display: block;
   max-width: 5em;
-  margin: 1.5em auto;
+  margin: 1.5em 2em;
   padding: 0.8em 0.95em 0.85em;
   color: #fafafa;
+  background: $maincolor;
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   border: 1px solid $darkcolor;
-  box-shadow: inset 0 -1px 1px $darkcolor;
-  border-radius: 2px;
-  background: $maincolor;
   cursor: pointer;
+  @include prefixify(box-shadow, inset 0 -1px 1px $darkcolor);
+  @include prefixify(border-radius, 2px);
+
+  &:link, &:visited {
+    color: #fafafa;
+    text-decoration: none;
+  }
+
+  &:hover, &:focus {
+    background: $lightcolor;
+  }
+  
+  &:active {
+    padding: 0.9em 2em 0.75em;
+    @include prefixify(box-shadow, inset 0 1px 1px rgba(0, 0, 0, 0.5));
+  }
 }
 
-a.button:hover, button:hover, button:focus {
-  background: $lightcolor;
+h2 {
+  font-weight: 300;
+  font-size: 2.0em;
+  margin: 1.2em 1em 0.6em;
 }
 
-a.button:active, button:active {
-  padding: 0.9em 0.95em 0.75em;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+h3 {
+  font-weight: 300;
+  font-size: 1.6em;
+  color: $maincolor;
+  margin: 1.6em 1.25em 0.3em;
 }
 
-#home a.button:link, #home a.button:visited {
-  max-width: 4em;
+
+
+/*HEADER*/
+h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  padding: 1.5em 0.8em 0.2em;
+  margin: 0;
+  color: $maincolor;
+
+  opacity: 0;
+  @include prefixify(transition, opacity 300ms ease-out, padding 300ms ease-out);
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  .obs {
+    display: none;
+  }
+  
+  a:link, a:visited {
+    font-weight: 300;
+    text-decoration: none;
+  }
 }
 
+nav {
+  margin: 1em 2em;
+  overflow: hidden;
+
+  opacity: 0;
+  @include prefixify(transition, opacity 300ms ease-out, margin 300ms ease-out);
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      a:link, a:visited {
+        padding: 0.7em 0.8em 0.7em 0;
+        text-decoration: none;
+      }
+        
+      a:hover {
+        text-decoration: underline;
+      }
+      
+      a.to-port:link, a.to-port:visited {
+        text-decoration: none;
+        color: #555;
+
+        &:hover {
+          color: #222;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*CONTENT*/
+div#content {
+  margin: 1em 0;
+
+  opacity: 0;
+  @include prefixify(transition, opacity 300ms ease-out);
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  &.loading {
+    opacity: 0.5;
+  }
+
+  section {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.6em;
+    margin: 1em 2em;
+  }
+}
+
+ul#portfolio {
+  margin: 1em 2em;
+  padding-left: 1.2em;
+}
+
+
+
+/*HOME*/
 #twitter {
   color: #00aced;
 }
@@ -185,47 +211,29 @@ a.button:active, button:active {
   color: #3f729b;
 }
 
-#slidedown {
-  height: 0;
-  overflow: hidden;
-}
 
-#notify {
-  background: #fff;
-  padding: 14px 18px;
-  border: 1px solid #eee;
-  margin: 1em auto;
-  display: block;
-  text-align: center !important;
-}
 
-input, textarea {
-  border: 1px solid #ddd;
-  background: none;
-  font-size: 1em;
-  font-family: 'Source Sans Pro', sans-serif;
-  display: block;
-  margin: 10px auto;
-  padding: 3%;
-  width: 84%;
-  outline: none;
-          transition: all 100ms ease;
-       -o-transition: all 100ms ease;
-      -ms-transition: all 100ms ease;
-     -moz-transition: all 100ms ease;
-  -webkit-transition: all 100ms ease;
-}
-input:hover, textarea:hover {
-  border-color: #bbb;
-  background: #fcfcfc;
-}
-input:focus, textarea:focus {
-  border-color: $maincolor;
-  background: #fff;
-}
+/*PORTFOLIO*/
+body.portfolio {
+  h1 {
+    padding-top: 0.5em;
+  }
 
-form button {
-  width: 4.5em;
+  nav {
+    margin-top: 0;
+
+    a:link, a:visited {
+      color: #555;
+    }
+
+    .to-port:link, .to-port:visited {
+      color: $maincolor;
+
+      &:hover {
+        color: $maincolor;
+      }
+    }
+  }
 }
 
 a#up {
@@ -236,10 +244,11 @@ a#up {
   padding: 0.9em;
   background: $maincolor;
   color: #eee;
-}
-a#up:hover {
-  background: $lightcolor;
-  text-decoration: none;
+
+  &:hover {
+    background: $lightcolor;
+    text-decoration: none;
+  }
 }
 
 img {
@@ -248,69 +257,86 @@ img {
   display: block;
 }
 
-div#question {
+#question {
   background: #f5f5f5;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  padding: 1px 1em 1em;
-  margin: 3em 0;
+  margin: 3em 0 0;
 }
 
-div#question a.button {
-  max-width: 5.3em
+#question a.button {
+  max-width: 5.2em
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 3em;
+  margin: 2em;
+
+  opacity: 0;
+  @include prefixify(transition, opacity 300ms ease-out);
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  p {
+    color: #666;
+  }
 }
 
-footer p {
-  text-align: center;
-  color: #666;
-  font-size: 0.95em;
-  margin: 1.2em;
+@media screen and (min-width: 230px) {
+  h1 .obs {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 600px) {
-  div#content p, ul#portfolio {
-    margin: 1em 20%;
+  h1 {
+    width: 80%;
+    margin: 0.5em auto 0;
   }
 
-  #home div#content p {
-    margin: 1em 30%;
+  h2 {
+    margin: 1.2em 0 0.6em;
   }
 
-  input, textarea {
-    padding: 1.5%;
-    width: 57%;
+  h3 {
+    margin: 1.6em 0 0.3em;
   }
 
-  img {
-    max-width: 60%;
+  div#content, footer, nav {
+    width: 80%;
+    margin: 1.8em auto;
+
+    p, ul {
+      margin: 1em 0;
+    }
+  }
+
+  #question {
+    border: 1px solid #eee;
+
+    h3 {
+      margin: 1.2em 1.3em 0.6em;
+    }
   }
 }
-@media screen and (min-width: 1200px) {
-  div#content p, ul#portfolio {
-    margin: 0.5em 30%;
+
+@media screen and (min-width: 960px) {
+  h1 {
+    width: 60%;
   }
 
-  #home div#content p {
-    margin: 1em 40%;
+  div#content, footer, nav {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    width: 40%;
   }
 
-  #home img {
-    margin: 0;
-  }
-
-  input, textarea {
-    padding: 1%;
-    width: 38%;
-  }
-
-  img {
-    max-width: 40%;
+  div#content, footer, nav {
+    width: 40%;
   }
 }
