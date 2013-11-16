@@ -201,6 +201,11 @@ img {
 #question a.button {
   max-width: 5.2em; }
 
+/*404*/
+body.notfound a:link, body.notfound a:visited {
+  color: #555; }
+
+/*FOOTER*/
 footer {
   margin: 2em;
   opacity: 0;

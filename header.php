@@ -29,7 +29,7 @@
     </script>
 
   </head>
-  <body<?php echo $portfolio; ?>>
+  <body<?php echo $bodyclass; ?>>
 
     <header>
       <h1>

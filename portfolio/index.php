@@ -1,7 +1,7 @@
 <?php
   if($_GET['ajax'] !== '1') {
     $title = 'Portfolio | ';
-    $portfolio = ' class="portfolio"';
+    $bodyclass = ' class="portfolio"';
     include('../header.php');
 ?>
     <div id="content">
