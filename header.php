@@ -43,7 +43,7 @@
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/portfolio" class="to-port">Portfolio</a>
+          <a href="/portfolio" class="to-port">Portfolio</a><span class="obs"><?php echo $breadcrumb; ?></span>
         </li>
       </ul>
     </nav>
