@@ -1,14 +1,14 @@
 <?php
   if($_GET['ajax'] !== '1') {
-    $title = 'Scoutingoost1.nl | Portfolio | ';
+    $title = 'Careljansen.com | Portfolio | ';
     $bodyclass = ' class="portfolioitem"';
-    $breadcrumb = '&ensp;>&ensp;Scoutingoost1.nl';
+    $breadcrumb = '&ensp;>&ensp;Careljansen.com';
     include('../../header.php');
   }
 ?>
 
   <div id="cover">
-    <img src="/media/img/scoutingoost1nl/cover.png" class="retina" alt="Scoutingoost1.nl">
+    <img src="/media/img/careljansencom/cover.png" class="retina" alt="Careljansen.com">
   </div>
 
   <div id="overcover">
@@ -21,10 +21,10 @@
 ?>
 
       <section class="item">
-        <h3>Scoutingoost1.nl (2013)</h3>
-        <p>I designed and built a website for a local Scouting-group.</p>
-        <img src="/media/img/scoutingoost1nl/1.png" class="retina" alt="Homepage">
-        <img src="/media/img/scoutingoost1nl/2.png" class="retina" alt="Homepage">
+        <h3>Careljansen.com (2012)</h3>
+        <p>I built a simple Wordpress site for <a href="http://careljansen.com/">Carel Jansen</a>.</p>
+        <img src="/media/img/careljansencom/cover.png" class="retina" alt="Home">
+        <img src="/media/img/careljansencom/2.png" class="retina" alt="Clients">
       </section>
 <?php
   if($_GET['ajax'] !== '1') {

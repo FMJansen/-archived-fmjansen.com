@@ -259,7 +259,8 @@ div#cover {
   width: 100%;
   top: 132px;
   z-index: 1;
-  background: #e4485b; }
+  background: #444;
+  border-top: 1px solid #eaeaea; }
   div#cover img {
     max-width: 80%;
     margin: 8em auto -3em;
@@ -274,6 +275,12 @@ div#cover {
     -ms-transition: opacity 300ms ease-out, margin 300ms ease-out;
     -moz-transition: opacity 300ms ease-out, margin 300ms ease-out;
     -webkit-transition: opacity 300ms ease-out, margin 300ms ease-out; }
+    div#cover img.no-shadow {
+      box-shadow: none;
+      -o-box-shadow: none;
+      -ms-box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none; }
     div#cover img.loaded {
       opacity: 1;
       margin: 2em auto 0; }

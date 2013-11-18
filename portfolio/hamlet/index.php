@@ -1,14 +1,14 @@
 <?php
   if($_GET['ajax'] !== '1') {
-    $title = 'Scoutingoost1.nl | Portfolio | ';
+    $title = 'Hamlet | Portfolio | ';
     $bodyclass = ' class="portfolioitem"';
-    $breadcrumb = '&ensp;>&ensp;Scoutingoost1.nl';
+    $breadcrumb = '&ensp;>&ensp;Hamlet';
     include('../../header.php');
   }
 ?>
 
   <div id="cover">
-    <img src="/media/img/scoutingoost1nl/cover.png" class="retina" alt="Scoutingoost1.nl">
+    <img src="/media/img/hamlet/cover.png" class="retina" alt="Hamlet">
   </div>
 
   <div id="overcover">
@@ -21,10 +21,9 @@
 ?>
 
       <section class="item">
-        <h3>Scoutingoost1.nl (2013)</h3>
-        <p>I designed and built a website for a local Scouting-group.</p>
-        <img src="/media/img/scoutingoost1nl/1.png" class="retina" alt="Homepage">
-        <img src="/media/img/scoutingoost1nl/2.png" class="retina" alt="Homepage">
+        <h3>Hamlet (2011)</h3>
+        <p>My school performed the famous play 'Hamlet'. I made a logo, some posters and a booklet.</p>
+        <img src="/media/img/hamlet/cover.png" class="retina" alt="Cover booklet">
       </section>
 <?php
   if($_GET['ajax'] !== '1') {

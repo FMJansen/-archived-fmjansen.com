@@ -333,7 +333,8 @@ div#cover {
   width: 100%;
   top: 132px;
   z-index: 1;
-  background: $maincolor;
+  background: #444;
+  border-top: 1px solid #eaeaea;
 
   img {
     max-width: 80%;
@@ -342,7 +343,11 @@ div#cover {
     @include prefixify(box-shadow, 0 0 5px 2px transparentize(black, 0.8));
 
     @include prefixify(transition, opacity 300ms ease-out, margin 300ms ease-out);
-  
+
+    &.no-shadow {
+      @include prefixify(box-shadow, none);
+    }
+
     &.loaded {
       opacity: 1;
       margin: 2em auto 0;

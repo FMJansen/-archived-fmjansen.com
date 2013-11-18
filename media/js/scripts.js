@@ -15,7 +15,8 @@ $(document).ready(function() {
     $('footer').addClass('loaded');
   }, 700);
 
-  if(window.devicePixelRatio >= 2) {
+
+  if(window.devicePixelRatio >= 2 && window.innerWidth > 960) {
     $('img.retina').each(function() {
       var retinasrc = $(this).attr('src').replace(/(.+)(\.\w{3,4})$/, "$1" + '@2x' + "$2");
       $(this).attr('src', retinasrc);
@@ -27,6 +28,7 @@ $(document).ready(function() {
     });
   }
 
+  
   $('a[href="/portfolio"]').click(function(e) {
     if(!$('body').hasClass('portfolioitem')) {
       e.preventDefault();

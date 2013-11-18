@@ -1,14 +1,14 @@
 <?php
   if($_GET['ajax'] !== '1') {
-    $title = 'Scoutingoost1.nl | Portfolio | ';
+    $title = 'Diary | Portfolio | ';
     $bodyclass = ' class="portfolioitem"';
-    $breadcrumb = '&ensp;>&ensp;Scoutingoost1.nl';
+    $breadcrumb = '&ensp;>&ensp;Diary';
     include('../../header.php');
   }
 ?>
 
   <div id="cover">
-    <img src="/media/img/scoutingoost1nl/cover.png" class="retina" alt="Scoutingoost1.nl">
+    <img src="/media/img/diary/cover.png" class="retina" alt="Diary">
   </div>
 
   <div id="overcover">
@@ -21,10 +21,10 @@
 ?>
 
       <section class="item">
-        <h3>Scoutingoost1.nl (2013)</h3>
-        <p>I designed and built a website for a local Scouting-group.</p>
-        <img src="/media/img/scoutingoost1nl/1.png" class="retina" alt="Homepage">
-        <img src="/media/img/scoutingoost1nl/2.png" class="retina" alt="Homepage">
+        <h3>Diary (2012)</h3>
+        <p>The first-years at my school get a diary. I was asked to design the cover.</p>
+        <p>For the sake of practice I made this MacBook Pro Retina and iPhone 4S. You can <a href="/media/downloads/apple.zip">download the .svg's</a>.</p>
+        <img src="/media/img/diary/cover.png" class="retina" alt="Cover">
       </section>
 <?php
   if($_GET['ajax'] !== '1') {
