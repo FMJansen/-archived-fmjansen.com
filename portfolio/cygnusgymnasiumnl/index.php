@@ -26,6 +26,11 @@
         <p>The concept was thought of by <a href="http://pimtt.nl">Pim</a> and me, I coded the design and Martin made the backend.</p>
         <p>Together with Pim we've thought of quite a few solutions to keep the huge amount of information accessible easily. For example, we've kept the main navigation as simple as possible and we've categorized all the available info-pages. These categories all got an own colour. For pages with subheadings there is an in-page navigation menu, inspired by <a href="http://theverge.com">The Verge</a>. Thereby, all pages got the ability to link to relevant pages.</p>
         <img src="/media/img/cygnusgymnasiumnl/1.png" class="retina" alt="Homepage">
+        <img src="/media/img/cygnusgymnasiumnl/2.png" class="retina" alt="Info page">
+        <img src="/media/img/cygnusgymnasiumnl/3.png" class="retina" alt="Page">
+        <img src="/media/img/cygnusgymnasiumnl/4.png" class="retina" alt="Login">
+        <img src="/media/img/cygnusgymnasiumnl/5.png" class="retina" alt="Admin">
+        <img src="/media/img/cygnusgymnasiumnl/6.png" class="retina" alt="Page editor">
       </section>
 <?php
   if($_GET['ajax'] !== '1') {
