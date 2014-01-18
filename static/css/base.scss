@@ -1,0 +1,158 @@
+@mixin page-center {
+  max-width: 550px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@mixin prefixify($style, $params) {
+	      #{$style}: $params;
+	   -o-#{$style}: $params;
+      -ms-#{$style}: $params;
+     -moz-#{$style}: $params;
+  -webkit-#{$style}: $params;
+}
+
+$maincolor: #e4485b;
+$bodyfont: 'Source Sans Pro', sans-serif;
+
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: $bodyfont;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+/*STANDARD ELEMENTS*/
+::selection {
+  background: $maincolor;
+  color: white;
+}
+::-moz-selection {
+  background: $maincolor;
+  color: white;
+}
+
+p {
+  margin: 1.5em 0;
+  line-height: 1.8em;
+  text-align: justify;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: $maincolor;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  
+  &:visited {
+    color: darken($maincolor, 10%);
+  }
+
+  /*EXTERNAL LINKS*/
+  &[href*='twitter.com'] {
+    color: #00acee;
+  }
+  
+  &[href*='dribbble.com'] {
+    color: #ea4c89;
+  }
+
+  &[href*='tumblr.com'] {
+    color: #34526f;
+  }
+  
+  &[href*='kippt.com'] {
+    color: #e03500;
+  }
+  
+  &[href*='github.com'] {
+    color: #171515;
+  }
+  
+  &[href*='freevle.org'] {
+    color: #10AC8A;
+  }
+  
+  &[href*='careljansen.com'] {
+    color: #0078ae;
+  }
+  
+  &[href*='willemdeblaauw.com'] {
+    color: #34ACFF;
+  }
+  
+  &[href*='scoutingoost1.nl'] {
+    color: #85D33C;
+  }
+  
+  &[href*='informatics-europe.org'] {
+    color: #F28000;
+  }
+}
+
+/*HEADER*/
+header#main {
+  @include page-center;
+  margin-top: 10%;
+
+  h1 {
+    margin: 1em 0 0.5em;
+    font-size: 2.5em;
+    word-wrap: normal;
+    
+    a {
+      color: $maincolor;
+      text-decoration: none;
+      font-weight: 300;
+      position: relative;
+      
+      &:before {
+        display: block;
+        content: "Floris\00a0Jansen";
+        position: absolute;
+        color: white;
+        top: -0.1em;
+        left: -0.35em;
+        padding: 0.1em 0.35em;
+        height: 0;
+        overflow: hidden;
+        @include prefixify(transition, all 100ms ease-out);
+      }
+      &:hover:before {
+        height: 100%;
+        background: $maincolor;
+      }
+    }
+  }
+}
+
+/*CONTENT*/
+div#content {
+  @include page-center;
+}
+
+footer {
+  @include page-center;
+
+  p {
+    color: #777;
+  }
+}
+
+@media (max-height: 850px) and (min-width: 1000px) {
+  header#main {
+    margin-top: 4%;
+  }
+}
