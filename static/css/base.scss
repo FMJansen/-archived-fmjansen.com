@@ -17,72 +17,6 @@
   @include prefixify(box-sizing, border-box);
 }
 
-/*CSS-ANIMATIONS*/
-@keyframes wobblein {
-  0% { transform: skewX(0deg); }
-  15% { transform: skewX(-25deg) rotate(-5deg) translateX(50px); }
-  30% { transform: skewX(20deg) rotate(3deg) translateX(-40px); }
-  45% { transform: skewX(-15deg) rotate(-3deg) translateX(30px); }
-  60% { transform: skewX(10deg) rotate(2deg) translateX(-20px); }
-  75% { transform: skewX(-5deg) rotate(-1deg) translateX(10px); }
-  100% { transform: skewX(0deg) translateX(0px); }
-}
-@keyframes wobbleout {
-  0% { transform: skewX(0deg); }
-  15% { transform: skewX(-25deg) rotate(-5deg) translateX(-50px);}
-  30% { transform: skewX(20deg) rotate(3deg) translateX(40px); }
-  45% { transform: skewX(-15deg) rotate(-3deg) translateX(-30px); }
-  60% { transform: skewX(10deg) rotate(2deg) translateX(20px); }
-  75% { transform: skewX(-5deg) rotate(-1deg) translateX(-10px); }
-  100% { transform: skewX(0deg) translateX(0px); }
-}
-
-@-webkit-keyframes wobblein {
-  0% { -webkit-transform: skewX(0deg); }
-  15% { -webkit-transform: skewX(-25deg) rotate(-5deg) translateX(50px);}
-  30% { -webkit-transform: skewX(20deg) rotate(3deg) translateX(-40px); }
-  45% { -webkit-transform: skewX(-15deg) rotate(-3deg) translateX(30px); }
-  60% { -webkit-transform: skewX(10deg) rotate(2deg) translateX(-20px); }
-  75% { -webkit-transform: skewX(-5deg) rotate(-1deg) translateX(10px); }
-  100% { -webkit-transform: skewX(0deg) translateX(0px); }
-}
-@-webkit-keyframes wobbleout {
-  0% { -webkit-transform: skewX(0deg); }
-  15% { -webkit-transform: skewX(-25deg) rotate(-5deg) translateX(-50px);}
-  30% { -webkit-transform: skewX(20deg) rotate(3deg) translateX(40px); }
-  45% { -webkit-transform: skewX(-15deg) rotate(-3deg) translateX(-30px); }
-  60% { -webkit-transform: skewX(10deg) rotate(2deg) translateX(20px); }
-  75% { -webkit-transform: skewX(-5deg) rotate(-1deg) translateX(-10px); }
-  100% { -webkit-transform: skewX(0deg) translateX(0px); }
-}
-
-@keyframes comedown {
-  0% { transform: translateY(-2em); }
-  40% { transform: translateY(0.5em); }
-  60% { transform: translateY(-0.3em); }
-  80% { transform: translateY(0.1em); }
-  100% { transform: translateY(0); }
-}
-@-webkit-keyframes comedown {
-  0% { -webkit-transform: translateY(-2em); }
-  40% { -webkit-transform: translateY(0.5em); }
-  60% { -webkit-transform: translateY(-0.3em); }
-  80% { -webkit-transform: translateY(0.1em); }
-  100% { -webkit-transform: translateY(0); }
-}
-
-@keyframes goup {
-  0% { transform: translateY(0); }
-  30% { transform: translateY(0.5em); }
-  100% { transform: translateY(-2em); }
-}
-@-webkit-keyframes goup {
-  0% { -webkit-transform: translateY(0); }
-  30% { -webkit-transform: translateY(0.5em); }
-  100% { -webkit-transform: translateY(-2em); }
-}
-
-
 $maincolor: #e4485b;
 $bodyfont: 'Source Sans Pro', sans-serif;
 
@@ -98,11 +32,7 @@ body, html {
   width: 100%;
   height: 100%;
   word-wrap: break-word;
-  overflow-y: hidden;
   overflow-x: hidden;
-}
-body {
-  overflow-y: scroll;
 }
 
 /*STANDARD ELEMENTS*/
@@ -174,6 +104,10 @@ a {
   &[href*='informatics-europe.org'] {
     color: #F28000;
   }
+
+  &[href*='wikipedia.org'] {
+    color: #0645AD;
+  }
 }
 
 /*HEADER*/
@@ -202,7 +136,7 @@ header#main {
         padding: 0.1em 0.35em;
         height: 0;
         overflow: hidden;
-        @include prefixify(transition, all 50ms ease-out);
+        @include prefixify(transition, all 100ms ease-out);
       }
       &:hover:before {
         height: 100%;
@@ -217,82 +151,17 @@ div#content {
   @include page-center;
 }
 
-/*SHOWOFF*/
-div.showoff {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 6em 2em 0;
-  top: 0;
-  right: -100%;
-  background: $maincolor;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  @include border-box;
-  @include prefixify(transition, right 150ms 0);
-  
-  &.in {
-    right: 0;
-            animation: wobblein 1s;
-    -webkit-animation: wobblein 1s;
-    
-    h2, .close {
-              animation: comedown 0.6s 1s;
-      -webkit-animation: comedown 0.6s 1s;
-    }
-  }
-
-  &.out {
-    @include prefixify(transition, right 150ms 450ms);
-    right: -100%;
-            animation: wobbleout 1s 0.25s;
-    -webkit-animation: wobbleout 1s 0.25s;
-
-    h2, .close {
-              animation: goup 0.25s;
-      -webkit-animation: goup 0.25s;
-    }
-  }
-
-  h2 {
-    font-size: 2em;
-    margin: 1em;
-    color: white;
-    font-weight: 400;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    @include prefixify(transition, opacity 200ms);
-    
-    &.showtime {
-      opacity: 1;
-    }
-  }
-
-  .close {
-    position: fixed;
-    top: 0.45em;
-    right: 0.8em;
-    font-size: 3em;
-    color: white;
-    font-weight: 300;
-    cursor: pointer;
-  }
-  
-  img {
-    max-height: 94%;
-    max-width: 90%;
-    margin: 1% 0 0 1.5em;
-    display: inline-block;
-    
-    &:nth-of-type(1) {
-      margin-left: 0;
-    }
-  }
+h3 {
+  font-size: 1.2em;
 }
-  
+
+ol.nonum {
+  list-style-type: circle;
+}
+
+.lb-cancel {
+  border-color: $maincolor;
+}
 
 footer {
   @include page-center;
@@ -300,32 +169,14 @@ footer {
   p {
     color: #777;
   }
+  
+  a:link, a:visited {
+    color: #666;
+  }
 }
 
 @media (max-height: 850px) and (min-width: 1000px) {
   header#main {
     margin-top: 4%;
-  }
-}
-
-@media (min-width: 900px) {
-  header#main, div#content, footer {
-    width: 30%;
-  }
-  
-  div.showoff {
-    width: 50%;
-    right: -50%;
-    
-    &.in {
-      right: 0;
-    }
-    &.out {
-      right: -50%;
-    }
-    
-    h2 {
-      left: 50%;
-    }
   }
 }
