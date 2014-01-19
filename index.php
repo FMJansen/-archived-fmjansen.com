@@ -9,11 +9,8 @@
 </div>
 
 <div id="showoff">
-  <div class="close">&raquo;</div>
   <h2>Hamlet</h2>
-  <div id="container">
-    <img src="/static/img/hamlet.png">
-  </div>
+  <img src="/static/img/hamlet.png">
 </div>
 
 <?php
