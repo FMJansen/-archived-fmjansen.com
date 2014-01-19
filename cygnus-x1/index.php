@@ -5,7 +5,7 @@
 
 <div id="content">
   <h2>School paper (Cygnus X1)</h2>
-  <p>I was responsible for the design of our school paper for the school years 2012-2013 and 2013-2014. Some were done in collaboration. The details are in the Colofon of each paper.</p>
+  <p>I was responsible for the design of our school paper for the school years 2012-2013 and 2013-2014. Some were done in collaboration. With whom that was is listed in the school paper under 'Colofon'.</p>
   <h3>The pdf's of the issues:</h3>
   <ol class="nonum">
     <li>
