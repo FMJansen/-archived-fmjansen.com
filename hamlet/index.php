@@ -9,8 +9,8 @@
 
 <div id="content">
   <h2>Hamlet</h2>
-  <p>In 2011 the '<a href="http://en.wikipedia.org/wiki/Hamlet">Hamlet</a>' by Shakespeare was performed at my school. I made a logo, some posters and a <a href="/static/img/hamlet.png" data-lightbox="hamlet">booklet</a>.</p>
-  <a href="/">Back to home</a>
+  <p>In 2011 werd '<a href="http://en.wikipedia.org/wiki/Hamlet">Hamlet</a>' van Shakespeare bij mij school opgevoerd. Ik heb daarvoor een logo, een paar posters en een <a href="/static/img/hamlet.png" data-lightbox="hamlet">programmaboekje</a> gemaakt.</p>
+  <a href="/">Terug</a>
 </div>
 
 <?php
