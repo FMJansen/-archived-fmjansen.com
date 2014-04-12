@@ -6,8 +6,8 @@
 }
 
 @mixin prefixify($style, $params) {
-	      #{$style}: $params;
-	   -o-#{$style}: $params;
+          #{$style}: $params;
+       -o-#{$style}: $params;
       -ms-#{$style}: $params;
      -moz-#{$style}: $params;
   -webkit-#{$style}: $params;
@@ -17,17 +17,16 @@
   @include prefixify(box-sizing, border-box);
 }
 
-$maincolor: #e4485b;
-$bodyfont: 'Source Sans Pro', sans-serif;
+$color: #e4485b;
+$face: 'Lato', sans-serif;
 
-
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body, html {
   margin: 0;
   padding: 0;
   background: #fafafa;
-  font-family: $bodyfont;
+  font: 1em $face;
   color: #333;
   width: 100%;
   height: 100%;
@@ -37,11 +36,11 @@ body, html {
 
 /*STANDARD ELEMENTS*/
 ::selection {
-  background: $maincolor;
+  background: $color;
   color: white;
 }
 ::-moz-selection {
-  background: $maincolor;
+  background: $color;
   color: white;
 }
 
@@ -54,21 +53,21 @@ p {
 a {
   font-weight: 600;
   text-decoration: none;
-  color: $maincolor;
-  
+  color: $color;
+
   &:hover {
     text-decoration: underline;
   }
-  
+
   &:visited {
-    color: darken($maincolor, 10%);
+    color: darken($color, 10%);
   }
 
   /*EXTERNAL LINKS*/
   &[href*='twitter.com'] {
     color: #00acee;
   }
-  
+
   &[href*='dribbble.com'] {
     color: #ea4c89;
   }
@@ -76,31 +75,31 @@ a {
   &[href*='tumblr.com'] {
     color: #34526f;
   }
-  
+
   &[href*='kippt.com'] {
     color: #e03500;
   }
-  
+
   &[href*='github.com'] {
     color: #171515;
   }
-  
+
   &[href*='freevle.org'] {
     color: #10AC8A;
   }
-  
+
   &[href*='careljansen.com'] {
     color: #0078ae;
   }
-  
+
   &[href*='willemdeblaauw.com'] {
     color: #34ACFF;
   }
-  
+
   &[href*='scoutingoost1.nl'] {
     color: #85D33C;
   }
-  
+
   &[href*='informatics-europe.org'] {
     color: #F28000;
   }
@@ -119,13 +118,13 @@ header#main {
     margin: 1em 0 0.5em;
     font-size: 2.5em;
     word-wrap: normal;
-    
+
     a {
-      color: $maincolor;
+      color: $color;
       text-decoration: none;
       font-weight: 300;
       position: relative;
-      
+
       &:before {
         display: block;
         content: "Floris\00a0Jansen";
@@ -140,7 +139,7 @@ header#main {
       }
       &:hover:before {
         height: 100%;
-        background: $maincolor;
+        background: $color;
       }
     }
   }
@@ -160,7 +159,7 @@ ol.nonum {
 }
 
 .lb-cancel {
-  border-color: $maincolor;
+  border-color: $color;
 }
 
 footer {
@@ -169,7 +168,7 @@ footer {
   p {
     color: #777;
   }
-  
+
   a:link, a:visited {
     color: #666;
   }
