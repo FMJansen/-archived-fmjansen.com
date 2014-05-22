@@ -37,6 +37,8 @@ a {
     color: #00acee; }
   a[href*='dribbble.com'] {
     color: #ea4c89; }
+  a[href*='last.fm'] {
+    color: #c3000d; }
   a[href*='tumblr.com'] {
     color: #34526f; }
   a[href*='kippt.com'] {
