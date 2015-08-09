@@ -2,7 +2,7 @@
 <html>
   <head>
 
-    <title><?=$page_title;?>FMJansen.nl</title>
+    <title><?=$page_title;?>FMJansen.nl - Floris, front-end developer en grafisch ontwerper</title>
 
     <link rel="stylesheet" href="/static/css/base.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:700|Merriweather:400,400italic" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#e4485b">
 
-    <meta property="og:title" content="FMJansen.nl">
+    <meta property="og:title" content="FMJansen.nl - Floris, front-end developer en grafisch ontwerper">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://fmjansen.nl/static/img/me.jpg">
     <meta property="og:url" content="http://fmjansen.nl">
