@@ -15,6 +15,7 @@
     <meta name="description" content="Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#e4485b">
 
     <meta property="og:title" content="FMJansen.nl">
     <meta property="og:type" content="website">
