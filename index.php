@@ -9,9 +9,10 @@
         en <a href="//telegram.me/fmjansen">Telegram</a> zijn sneller.</p>
       <p>Verder ben ik te vinden op
         <a href="//dribbble.com/fmjansen">Dribbble</a>,
-        <a href="//last.fm/lastfmjansen">Last.fm</a>,
+        <a href="//www.last.fm/user/lastfmjansen">Last.fm</a>,
         <a href="//fmjansen.tumblr.com">Tumblr</a> en
-        <a href="//instagram.com/fmjansennl">Instagram</a> en
+        <a href="//instagram.com/fmjansennl">Instagram</a>,
+        <a href="//www.flickr.com/photos/fmjansen/">Flickr</a> en
         <a href="//linkedin.com/in/florismartijnjansen">LinkedIn</a>.
       </p>
 
