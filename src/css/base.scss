@@ -1,0 +1,146 @@
+@mixin page-center {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+}
+
+$color: #e4485b;
+$headings: 'Lato', sans-serif;
+$body: 'PT Serif', 'Georgia', serif;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font: 20px $body;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+}
+
+/*STANDARD ELEMENTS*/
+::selection {
+  background: $color;
+  color: white;
+}
+::-moz-selection {
+  background: $color;
+  color: white;
+}
+
+p {
+  margin: 1.5em 0;
+  line-height: 1.6;
+}
+
+a {
+  color: #333;
+
+  &:hover {
+    color: $color;
+  }
+
+  &:hover:visited {
+    color: darken($color, 20%);
+  }
+}
+
+article {
+  padding: 1rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+time {
+  color: #777;
+  font-style: italic;
+}
+
+
+/*HEADER*/
+header {
+  @include page-center;
+  margin-top: 7%;
+
+  h1 {
+    margin: 1em 0 0.5em;
+    font-size: 1.9em;
+    word-wrap: normal;
+
+    a {
+      color: $color;
+      text-decoration: none !important;
+      font-weight: 300;
+      position: relative;
+    }
+  }
+}
+
+/*CONTENT*/
+.content {
+  @include page-center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $headings;
+}
+
+h1 {
+  color: $color;
+}
+
+h2 {
+  color: $color;
+  margin: 1.5em 0 1em;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+footer {
+  @include page-center;
+
+  color: #666;
+  text-align: center;
+}
+
+@media (max-height: 850px) and (min-width: 1000px) {
+  header#main {
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 700px) {
+  html, body {
+    font-size: 24px;
+  }
+
+  article {
+    padding: 2rem 0;
+  }
+
+  .date-title {
+    width: 20%;
+    float: left;
+    margin-right: 5%;
+  }
+
+  h3 {
+    margin: 0 0 .5rem;
+  }
+
+  .description {
+    float: left;
+    width: 75%;
+
+    p {
+      margin: 0;
+    }
+  }
+}

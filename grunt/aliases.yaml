@@ -1,0 +1,14 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - 'concurrent:first'
+    - 'concurrent:second'
+    - 'concurrent:third'
+
+prod:
+  description: 'Default (production) build'
+  tasks:
+    - 'concurrent:firstProd'
+    - 'concurrent:secondProd'
+    - 'concurrent:thirdProd'
+    - 'concurrent:fourthProd'

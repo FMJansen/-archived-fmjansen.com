@@ -1,13 +1,13 @@
 <?php
-  $title = '404 Not found | ';
+  $page_title = '404 Not found | ';
   include('header.php');
 ?>
 
-<div id="content">
+<div class="content">
   <h2>Meh :/</h2>
-  <h3>404 Page not found</h3>
+  <h3>404 Pagina niet gevonden</h3>
 
-  <p>Pitty, the server couldn't find this page, so you got to see this boring 404-page. You'll probably want to head <a href="/">home</a>.</p>
+  <p>Helaas, deze pagina lijkt niet op de server te staan, dus nu zie je deze 404-pagina. Waarschijnlijk wil je naar <a href="/">m'n voorpagina</a> gaan.</p>
 </div>
 
 <?php
