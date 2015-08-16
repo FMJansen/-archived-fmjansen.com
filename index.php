@@ -25,6 +25,10 @@
         </div>
         <div class="description">
           <p>Site <a href="http://scoutingoost1.nl/">Scouting Oost 1</a></p>
+          <img alt="Screenshot site Scouting Oost 1"
+            srcset="/static/img/scouting.png 1x,
+              /static/img/scouting@2x.png 2x"
+            src="/static/img/scouting.png">
         </div>
       </article>
 
@@ -34,7 +38,11 @@
           <time datetime="2015">2015</time>
         </div>
         <div class="description">
-          <p>Site <a href="http://id.tudelft.nl/ejw/2015/"><abbr title="Eerstejaarsweekend">EJW</abbr> <abbr title="Industrieel Ontwerpen">IO</abbr></a>, samen met <a href="http://emilflach.com/">Emil Flach</a></p>
+          <p>Site <a href="http://id.tudelft.nl/ejw/2015/"><abbr title="Eerstejaarsweekend">EJW</abbr> 2015 van <abbr title="Industrieel Ontwerpen">IO</abbr></a>, samen met <a href="http://emilflach.com/">Emil Flach</a></p>
+          <img alt="Screenshot site EJW"
+            srcset="/static/img/ejw.png 1x,
+              /static/img/ejw@2x.png 2x"
+            src="/static/img/ejw.png">
         </div>
       </article>
 
@@ -45,6 +53,10 @@
         </div>
         <div class="description">
           <p>Inhoud site, <a href="http://iob2014.id.tudelft.nl/sign-up/">aanmeldformulier</a> en promotiemateriaal (stickers, posters, flyers, etc.) <a href="http://iob2014.id.tudelft.nl/"><abbr title="Industrieel Ontwerpen Bedrijvenbeurs">IOB</abbr></a>, samen met <a href="http://emilflach.com/">Emil Flach</a> en <a href="https://linkedin.com/in/michalionarons">Micha Lionarons</a></p>
+          <img alt="Poster voor het Career event van de IOB met het programma"
+            srcset="/static/img/iob.png 1x,
+              /static/img/iob@2x.png 2x"
+            src="/static/img/iob.png">
         </div>
       </article>
 
@@ -55,6 +67,10 @@
         </div>
         <div class="description">
           <p>Animatie voor het <a href="https://nioo.knaw.nl/"><abbr title="Nederlands Instituut voor Ecologie">NIOO</abbr></a>, <a href="https://youtu.be/48yFWouoVFg?t=401">getoond</a> bij de <a href="http://www.universiteitvannederland.nl/">Universiteit van Nederland</a></p>
+          <img alt="Still animatie NIOO"
+            srcset="/static/img/algen-NIOO.png 1x,
+              /static/img/algen-NIOO@2x.png 2x"
+            src="/static/img/algen-NIOO.png">
         </div>
       </article>
 
@@ -64,7 +80,11 @@
           <time datetime="2014">2014</time>
         </div>
         <div class="description">
-          <p>Bouw site <a href="http://www.schaverijutrecht.nl/">Schaverij Utrecht</a> in opdracht van het inmiddels gestopte bureau <a href="http://zeative.nl/">Zeative</a></p>
+          <p>Bouw site <a href="http://www.schaverijutrecht.nl/">Schaverij Utrecht</a> in opdracht van het inmiddels gestopte bureau <a href="http://zeative.nl/">Zeative</a>, ontwerp door Zeative</p>
+          <img alt="Screenshot site Schaverij Utrecht"
+            srcset="/static/img/schaverij.png 1x,
+              /static/img/schaverij@2x.png 2x"
+            src="/static/img/schaverij.png">
         </div>
       </article>
 
@@ -75,6 +95,10 @@
         </div>
         <div class="description">
           <p>Boekje <a href="http://www.informatics-europe.org/images/documents/more-women-in-informatics-research-and-education_2013.pdf">More women in informatics research and education</a> voor <a href="http://www.informatics-europe.org/services/women-in-icst-research-and-education.html">Informatics Europe</a></p>
+          <img alt="Deel cover WIRE booklet"
+            srcset="/static/img/WIRE.png 1x,
+              /static/img/WIRE@2x.png 2x"
+            src="/static/img/WIRE.png">
         </div>
       </article>
 
@@ -85,6 +109,10 @@
         </div>
         <div class="description">
           <p>Ontwerp en front-end development voor <a href="http://freevle.org">Freevle</a>, een CMS voor scholen met <a href="https://www.facebook.com/mpvharmelen">Martin van Harmelen</a>, <a href="https://twitter.com/pimtt">Pim ten Thije</a> en <a href="http://martijnarts.com/">Martijn Arts</a> (ontwikkeling onderbroken/gestopt)</p>
+          <img alt="Screenshot demo Freevle voor het Cygnus Gymnasium"
+            srcset="/static/img/freevle.png 1x,
+              /static/img/freevle@2x.png 2x"
+            src="/static/img/freevle.png">
         </div>
       </article>
 
@@ -101,6 +129,10 @@
             <a href="http://issuu.com/cygnusx-1/docs/x-15">15</a>,
             <a href="http://issuu.com/cygnusx-1/docs/x-16">16</a> en
             <a href="http://issuu.com/cygnusx-1/docs/alles17">17</a> met Samuel Cohn)</p>
+            <img alt="Inhoudsopgave en redactioneel Cygnus X-17"
+              srcset="/static/img/cygnusx1.png 1x,
+                /static/img/cygnusx1@2x.png 2x"
+              src="/static/img/cygnusx1.png">
         </div>
       </article>
 
@@ -111,6 +143,10 @@
         </div>
         <div class="description">
           <p>Site <a href="http://willemdeblaauw.com">Willem de Blaauw</a></p>
+          <img alt="Screenshot site Willem de Blaauw"
+            srcset="/static/img/willemdeblaauw.png 1x,
+              /static/img/willemdeblaauw@2x.png 2x"
+            src="/static/img/willemdeblaauw.png">
         </div>
       </article>
 
@@ -121,6 +157,10 @@
         </div>
         <div class="description">
           <p>Site <a href="http://careljansen.com">Carel Jansen</a></p>
+          <img alt="Screenshot site Carel Jansen"
+            srcset="/static/img/careljansen.png 1x,
+              /static/img/careljansen@2x.png 2x"
+            src="/static/img/careljansen.png">
         </div>
       </article>
 
@@ -131,6 +171,10 @@
         </div>
         <div class="description">
           <p>Promotie opvoering van Hamlet en later Andromache op school</p>
+          <img alt="Logo Andromache"
+            srcset="/static/img/andromache.png 1x,
+              /static/img/andromache@2x.png 2x"
+            src="/static/img/andromache.png">
         </div>
       </article>
 
