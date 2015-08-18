@@ -4,9 +4,9 @@
       <p>Hey! Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer.</p>
 
       <h2>Contact</h2>
-      <p>Je kunt me <a href="mailto:floris@fmjansen.nl">mailen</a> (floris@fmjansen.nl),
-        maar <a href="//twitter.com/fmjansen">Twitter</a>
-        en <a href="//telegram.me/fmjansen">Telegram</a> zijn sneller.</p>
+      <p>Je kunt me bereiken via <a href="//twitter.com/fmjansen">Twitter</a>
+        en <a href="//telegram.me/fmjansen">Telegram</a>
+        of <a href="mailto:floris@fmjansen.nl">mail</a> (floris@fmjansen.nl).</p>
       <p>Verder ben ik te vinden op
         <a href="//dribbble.com/fmjansen">Dribbble</a>,
         <a href="//www.last.fm/user/lastfmjansen">Last.fm</a>,
