@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
     <section class="content">
-      <p>Hey! Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer.</p>
+      <p>Hey! Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer. Dus ik maak posters, boekjes en websites en leer producten te ontwerpen.</p>
 
       <h2>Contact</h2>
       <p>Je kunt me bereiken via <a href="//twitter.com/fmjansen">Twitter</a>
