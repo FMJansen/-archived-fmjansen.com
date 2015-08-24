@@ -178,6 +178,10 @@
         </div>
       </article>
 
+      <p class="cta">
+        Kan ik wat voor jou betekenen? <a href="mailto:floris@fmjansen.nl">Mail me</a>!
+      </p>
+
     </section>
 
 <?php include('footer.php'); ?>

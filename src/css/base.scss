@@ -107,6 +107,18 @@ img {
   max-width: 100%;
 }
 
+.cta {
+  background-color: $color;
+  text-align: center;
+  padding: 1.5em;
+  color: white;
+  font-family: $headings;
+
+  a {
+    color: white;
+  }
+}
+
 footer {
   @include page-center;
 
