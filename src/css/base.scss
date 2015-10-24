@@ -79,6 +79,13 @@ header {
   }
 }
 
+.intro {
+  padding: 1% 10%;
+  background: $color;
+  font-size: 2em;
+  color: white;
+}
+
 /*CONTENT*/
 .content {
   @include page-center;
@@ -166,5 +173,11 @@ footer {
     p {
       margin: 0 0 1em;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    padding: 10% 20%;
   }
 }

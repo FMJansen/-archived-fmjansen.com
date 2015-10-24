@@ -36,7 +36,3 @@
 
   </head>
   <body>
-
-    <header>
-      <h1>FMJansen</h1>
-    </header>
