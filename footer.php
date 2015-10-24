@@ -1,5 +1,5 @@
     <footer>
-      <p>Laatste update: <time datetime="2015-08">Augustus 2015</time> &mdash; Floris Jansen</p>
+      <p>Laatste update: <time datetime="2015-10">Oktober 2015</time> &mdash; Floris Jansen</p>
     </footer>
 
     <!--[if lt IE 9]>
