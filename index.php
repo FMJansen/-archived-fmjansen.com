@@ -30,6 +30,20 @@
 
       <article>
         <div class="date-title">
+          <h3>Ouderdag IO</h3>
+          <time datetime="2015">2015</time>
+        </div>
+        <div class="description">
+          <p>Site <a href="http://id.tudelft.nl/ouderdag/2015/">Ouderdag IO 2015</a>, inclusief inschrijfsysteem in Python. In samenwerking met <a href="http://emilflach.com/">Emil Flach</a>. Front-end op basis van de site van <a href="http://id.tudelft.nl/ejw/2015/"><abbr title="Eerstejaarsweekend">EJW</abbr> 2015</a>.</p>
+          <img alt="Screenshot site Ouderdag IO 2015"
+            srcset="/static/img/ouderdag.png 1x,
+              /static/img/ouderdag@2x.png 2x"
+            src="/static/img/ouderdag.png">
+        </div>
+      </article>
+
+      <article>
+        <div class="date-title">
           <h3>Scouting Oost 1</h3>
           <time datetime="2015">2015</time>
         </div>
