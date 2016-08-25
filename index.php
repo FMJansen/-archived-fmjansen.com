@@ -16,9 +16,8 @@
       <h2>Contact</h2>
       <p>Je kunt me bereiken via <a href="//twitter.com/fmjansen">Twitter</a>
         en <a href="//telegram.me/fmjansen">Telegram</a>
-        of <a href="mailto:floris@fmjansen.nl">mail</a> (floris@fmjansen.nl).</p>
-      <p>Verder ben ik te vinden op
-        <a href="//dribbble.com/fmjansen">Dribbble</a>,
+        of <a href="mailto:floris@fmjansen.nl">mail</a> (floris@fmjansen.nl).
+        Verder ben ik te vinden op
         <a href="//www.last.fm/user/lastfmjansen">Last.fm</a>,
         <a href="//fmjansen.tumblr.com">Tumblr</a> en
         <a href="//instagram.com/fmjansennl">Instagram</a>,
