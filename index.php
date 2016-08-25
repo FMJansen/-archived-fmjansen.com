@@ -30,6 +30,34 @@
 
       <article>
         <div class="date-title">
+          <h3>Turn The Page</h3>
+          <time datetime="2015-2016">2015-2016</time>
+        </div>
+        <div class="description">
+          <p>Eindredactie layout van <a href="//turnthepage.nl/">Turn The Page</a>, het magazine van <a href="//studieverenigingid.nl">Studievereniging i.d</a></p>
+          <img alt="Een cover van Turn The Page"
+            srcset="/static/img/turnthepage_cover.png 1x,
+              /static/img/turnthepage_cover@2x.png 2x"
+            src="/static/img/turnthepage_cover.png">
+        </div>
+      </article>
+
+      <article>
+        <div class="date-title">
+          <h3>Room for Discussion</h3>
+          <time datetime="2016">2016</time>
+        </div>
+        <div class="description">
+          <p>Site van <a href="//roomfordiscussion.com/">Room for Discussion</a>, op basis van een huisstijl bestaande uit een logo en kleuren.</p>
+          <img alt="Screenshot site Room for Discussion"
+            srcset="/static/img/rfd.png 1x,
+              /static/img/rfd@2x.png 2x"
+            src="/static/img/rfd.png">
+        </div>
+      </article>
+
+      <article>
+        <div class="date-title">
           <h3>Ouderdag IO</h3>
           <time datetime="2015">2015</time>
         </div>
@@ -39,6 +67,20 @@
             srcset="/static/img/ouderdag.png 1x,
               /static/img/ouderdag@2x.png 2x"
             src="/static/img/ouderdag.png">
+        </div>
+      </article>
+
+      <article>
+        <div class="date-title">
+          <h3>Turn The Page website</h3>
+          <time datetime="2015">2015</time>
+        </div>
+        <div class="description">
+          <p>Site <a href="//turnthepage.nl/">Turn The Page</a>, het magazine van <a href="//studieverenigingid.nl">Studievereniging i.d</a></p>
+          <img alt="Screenshot site Turn The Page"
+            srcset="/static/img/turnthepage.png 1x,
+              /static/img/turnthepage@2x.png 2x"
+            src="/static/img/turnthepage.png">
         </div>
       </article>
 
