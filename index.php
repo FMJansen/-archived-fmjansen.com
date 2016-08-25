@@ -1,18 +1,10 @@
 <?php include('header.php'); ?>
 
-    <section class="intro">
-      <p>
-        Ik ontwerp, ontwikkel<br> en maak ’t minder ingewikkeld.
-      </p>
-    </section>
-
     <header>
       <h1>FMJansen</h1>
     </header>
 
     <section class="content">
-      <p>Hey! Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer. Dus ik maak posters, boekjes en websites en leer producten te ontwerpen.</p>
-
       <h2>Contact</h2>
       <p>Je kunt me bereiken via <a href="//twitter.com/fmjansen">Twitter</a>
         en <a href="//telegram.me/fmjansen">Telegram</a>
