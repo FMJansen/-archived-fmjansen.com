@@ -1,5 +1,5 @@
     <footer>
-      <p>Laatste update: <time datetime="2016-08">Augustus 2016</time></p>
+      <p>Laatste update: <time datetime="2016-11">November 2016</time></p>
       <p>FMJansen &mdash; KvK-nummer: 64878627</p>
     </footer>
 
