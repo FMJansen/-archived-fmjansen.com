@@ -35,3 +35,7 @@
 
   </head>
   <body>
+
+    <header>
+      <h1 class="site_title site_title--top">FMJansen</h1>
+    </header>

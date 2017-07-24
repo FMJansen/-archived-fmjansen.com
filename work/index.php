@@ -1,9 +1,5 @@
 <?php $page_title = 'Werk - '; include('../header.php'); ?>
 
-<header>
-  <h1 class="site_title site_title--top">FMJansen</h1>
-</header>
-
 <section class="work">
 
 	<h2 class="work__title">M’n werk</h2>
