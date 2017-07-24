@@ -8,7 +8,8 @@
 
       <p class="phone_call__message phone_call__message--floris">
         Hey, met mij,<br>
-        met Floris!
+        met Floris!<br>
+        <a href="/work" class="phone_call__subtle">portfolio</a>
       </p>
 
       <div class="line"></div>

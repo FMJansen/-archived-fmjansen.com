@@ -113,9 +113,10 @@ header {
     margin: 0;
     color: white;
     background: black;
+    font-weight: bold;
 
     @media (min-width: 500px) {
-      padding: 15vh 8%;
+      padding: 12vh 8%;
     }
 
     &:nth-of-type(2n) {
@@ -129,7 +130,7 @@ header {
 
       &:first-of-type {
         font-weight: 800;
-        padding: 24vh 15% 24vh 10%;
+        padding: 16vh 15% 24vh 10%;
         font-size: 1.4em;
 
         @media (min-width: 500px) {
@@ -141,7 +142,6 @@ header {
     &--visitor {
       text-align: right;
       padding-left: 24%;
-      font-weight: bold;
     }
 
     &--center {
@@ -156,6 +156,14 @@ header {
     &:hover {
       color: $color;
     }
+  }
+
+  &__subtle {
+    font-size: 1rem;
+    opacity: .8;
+    display: block;
+    margin-top: 1em;
+    font-weight: 400;
   }
 }
 
@@ -178,7 +186,7 @@ header {
 footer {
   color: #999;
   text-align: left;
-  max-width: 800px;
+  max-width: 1200px;
   width: 80%;
   margin: auto;
   padding: 2em 0;
