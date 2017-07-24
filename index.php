@@ -53,7 +53,7 @@
       </p>
 
       <p class="phone_call__message phone_call__message--center">
-        <span class="site_title">FMJansen</span> [KvK: 64878627, Laatste update: <time datetime="2017-07">Juli 2017</time>]
+        <span class="site_title">FMJansen</span> [KvK: 64878627, Laatste update: <time datetime="2017-07">juli 2017</time>]
       </p>
 
     </section>
