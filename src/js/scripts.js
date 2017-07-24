@@ -1,14 +1,6 @@
-(function($) {
-  'use strict';
+var workLink = document.querySelector('a[href=/work]');
+workLink.onclick = openWork;
 
-  function menuToggle() {
-  }
-
-  $(document).ready(function() {
-
-    $('#nav-tgl').click(menuToggle);
-
-  });
-
-}(jQuery));
-
+function openWork() {
+    alert('lekker klikken');
+}

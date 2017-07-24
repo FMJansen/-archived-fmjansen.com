@@ -57,4 +57,20 @@
 
     </section>
 
+    <section class="work">
+      <div class="work__part background_shape"></div>
+      <div class="work__part background_shape"></div>
+      <div class="work__part work__cards">
+        <div class="work__card">
+          <div class="work__image">
+            <img src="/static/img/andromache.png" alt="">
+          </div>
+          <div class="work__text">
+            <h2>Website Study association i.d</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <?php include('footer.php'); ?>
