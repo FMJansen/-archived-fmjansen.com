@@ -1,7 +1,7 @@
     <footer>
       <blockquote class="lyric">
         <p>Op een ochtend was alles af</p>
-        <cite class="lyric__artist">– Spinvis, in <em class="lyric__song">Op een ochtend in het heelal</em></cite>
+        <cite class="lyric__artist">– Spinvis, in <a href="https://open.spotify.com/track/3FMj3CRhwWVcUT6zCGSBjY" class="lyric__song">Op een ochtend in het heelal</a></cite>
       </blockquote>
     </footer>
 

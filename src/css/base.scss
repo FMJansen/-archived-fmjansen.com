@@ -73,12 +73,12 @@ header {
 }
 
 .site_title {
-  margin: 1em 0 -0.5em;
   text-align: center;
   line-height: 1;
   font-weight: 800;
 
   &--top {
+    margin: 1em 0 -0.5em;
     font-size: 26px;
     color: #000;
 
@@ -90,6 +90,15 @@ header {
       height: .8em;
       overflow: hidden;
       line-height: 0;
+      pointer-events: none;
+    }
+
+    &:hover:after {
+      color: $color;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -229,5 +238,7 @@ footer {
 
   &__song {
     font-style: normal;
+    color: #999;
+    text-decoration: none;
   }
 }
