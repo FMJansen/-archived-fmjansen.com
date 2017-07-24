@@ -4,7 +4,7 @@
 
     <title><?=$page_title;?>FMJansen.nl</title>
 
-    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/base.css?v=07-2017">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="/static/img/favicon.png">
 
