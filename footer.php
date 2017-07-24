@@ -1,6 +1,5 @@
     <footer>
-      <p>Laatste update: <time datetime="2016-11">November 2016</time></p>
-      <p>FMJansen &mdash; KvK-nummer: 64878627</p>
+      <p>FMJansen [KvK: 64878627, Laatste update: <time datetime="2017-07">Juli 2017</time>]</p>
     </footer>
 
     <!--[if lt IE 9]>
