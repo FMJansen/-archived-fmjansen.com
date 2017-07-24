@@ -1,5 +1,8 @@
     <footer>
-      <p>FMJansen [KvK: 64878627, Laatste update: <time datetime="2017-07">Juli 2017</time>]</p>
+      <blockquote class="lyric">
+        <p>Op een ochtend was alles af</p>
+        <cite class="lyric__artist">– Spinvis, in <em class="lyric__song">Op een ochtend in het heelal</em></cite>
+      </blockquote>
     </footer>
 
     <!--[if lt IE 9]>

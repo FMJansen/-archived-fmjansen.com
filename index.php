@@ -1,15 +1,17 @@
 <?php include('header.php'); ?>
 
     <header>
-      <h1>FMJansen</h1>
+      <h1 class="site_title site_title--top">FMJansen</h1>
     </header>
 
     <section class="phone_call">
 
       <p class="phone_call__message phone_call__message--floris">
         Hey, met mij,<br>
-        <strong class="phone_call__name">met Floris!</strong>
+        met Floris!
       </p>
+
+      <div class="line"></div>
 
       <p class="phone_call__message phone_call__message--visitor">
         Hey. Wat doe je?
@@ -25,11 +27,13 @@
       </p>
 
       <p class="phone_call__message phone_call__message--floris">
-        Nou <a href="/work">kijk maar</a> wat je vindt.
+        Nou, ja, denk het wel.<br>
+        Maar <a href="/work">kijk maar</a> wat je vindt.
       </p>
 
       <p class="phone_call__message phone_call__message--visitor">
-        Oh, ja. Ja, precies ja. Nou misschien tot horens dan hè!
+        Oh, ja. Ja, precies ja.<br>
+        Nou misschien tot horens dan hè!
       </p>
 
       <p class="phone_call__message phone_call__message--floris">
@@ -45,6 +49,10 @@
 
       <p class="phone_call__message phone_call__message--visitor">
         Groetjes, hoi hoi!
+      </p>
+
+      <p class="phone_call__message phone_call__message--center">
+        <span class="site_title">FMJansen</span> [KvK: 64878627, Laatste update: <time datetime="2017-07">Juli 2017</time>]
       </p>
 
     </section>
