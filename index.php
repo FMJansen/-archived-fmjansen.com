@@ -43,6 +43,7 @@
         <a href="//twitter.com/fmjansen">Twitteren</a>,
         <a href="//instagram.com/fmjansennl">Instagrammen</a>,
         <a href="//linkedin.com/in/florismartijnjansen">LinkedInnen</a>,
+        <a href="//github.com/fmjansen">GitHubben</a>,
         <a href="//www.last.fm/user/lastfmjansen">Last.fm’en</a>,
         <a href="mailto:floris@fmjansen.nl">mailen</a> en
         (als je het lief vraagt) ook wel bellen. Joe!
