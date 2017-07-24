@@ -2,10 +2,10 @@
 <html>
   <head>
 
-    <title><?=$page_title;?>FMJansen.nl - Floris, front-end developer en grafisch ontwerper</title>
+    <title><?=$page_title;?>FMJansen.nl</title>
 
     <link rel="stylesheet" href="/static/css/base.css">
-    <link href="http://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="/static/img/favicon.png">
 
     <meta charset="utf-8">
