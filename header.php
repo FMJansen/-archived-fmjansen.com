@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/static/css/base.css?v=07-2017">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="/static/img/favicon.png">
+    <link rel="shortcut icon" href="/static/img/favicon.png?v=07-2017">
 
     <meta charset="utf-8">
     <meta name="robots" content="index,follow">
@@ -17,10 +17,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#e4485b">
 
-    <meta property="og:title" content="FMJansen.nl - Floris, front-end developer en grafisch ontwerper">
+    <meta property="og:title" content="FMJansen">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fmjansen.nl">
-    <meta property="og:description" content="Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer.">
+    <meta property="og:image" content="https://fmjansen.nl/static/img/ogimg.png">
+    <meta property="og:description" content="Floris, front-end developer en grafisch ontwerper">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fmjansen">
+    <meta name="twitter:creator" content="@fmjansen">
+    <meta name="twitter:title" content="FMJansen">
+    <meta name="twitter:description" content="Floris, front-end developer en grafisch ontwerper">
+    <meta name="twitter:image" content="https://fmjansen.nl/static/img/ogimg.png">
+
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
