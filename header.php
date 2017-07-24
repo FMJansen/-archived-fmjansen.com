@@ -19,7 +19,6 @@
 
     <meta property="og:title" content="FMJansen.nl - Floris, front-end developer en grafisch ontwerper">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://fmjansen.nl/static/img/me.jpg">
     <meta property="og:url" content="http://fmjansen.nl">
     <meta property="og:description" content="Ik ben Floris Jansen, ik studeer Industrieel Ontwerpen aan de TU Delft en ben een grafisch ontwerper en front-end developer.">
 
