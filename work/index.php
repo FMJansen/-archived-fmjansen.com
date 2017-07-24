@@ -8,6 +8,20 @@
 
 	<article class="work__item">
 		<div class="date-title">
+			<h3>Website Studievereniging i.d</h3>
+			<time datetime="2016-2017">2016-2017</time>
+		</div>
+		<div class="description">
+			<p>De bouw van de nieuwe website van <a href="//studieverenigingid.nl">Studievereniging i.d</a>, samen met <a href="http://conceptivate.nl">Nils Westhoff</a>, met hulp van onder andere <a href="http://emilflach.com/">Emil Flach</a> en <a href="//www.alexanderweiss.nl/">Alexander Weiss</a>. [<a href="//github.com/studieverenigingid/i.d-Website">GitHub</a>]</p>
+			<img alt="De homepage van Studieverenigingid.nl"
+				srcset="/static/img/svid.png 1x,
+					/static/img/svid@2x.png 2x"
+				src="/static/img/svid.png">
+		</div>
+	</article>
+
+	<article class="work__item">
+		<div class="date-title">
 			<h3>Turn The Page</h3>
 			<time datetime="2015-2016">2015-2016</time>
 		</div>
